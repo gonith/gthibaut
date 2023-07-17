@@ -1,0 +1,45 @@
+@media screen and (max-width: 1200px) {
+  .container-content {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .myskills {
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  .textpropos .paragraphe1 {
+    margin-bottom: 85px;
+  }
+
+  .center-content .aboutme {
+    margin-top: 0;
+  }
+
+  .center-content .bar {
+    width: 70%;
+  }
+
+  .right-light-about,
+  .left-light-skills {
+    display: none;
+  }
+
+  .center-content {
+    width: 100%;
+  }
+
+  .container-skills-icons .skills-icons .inprocess {
+    margin-bottom: -50px;
+  }
+
+  .container-skills-icons .skills-icons .inside-elements {
+    margin-top: 30px;
+  }
+  .container-skills-icons .skills-icons {
+    width: 60%;
+  }
+}

@@ -1,0 +1,40 @@
+@media screen and (max-width: 765px) {
+  .container-form .container-center p {
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .container-form .container-reseaux {
+    height: 10%;
+  }
+
+  form {
+    height: 75%;
+    align-items: center;
+    gap: 45px;
+    padding: 45px;
+  }
+
+  form .formname {
+    margin-left: 0;
+  }
+
+  form .formemail {
+    margin-left: 0;
+  }
+
+  form .formtext {
+    margin: 0;
+    width: 16rem;
+    height: 130px;
+  }
+
+  .container-form .container-reseaux .container-logos-bar {
+    height: 100px;
+  }
+
+  .container-form .container-reseaux .container-logos-bar .logos {
+    gap: 20px;
+  }
+}

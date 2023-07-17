@@ -1,0 +1,58 @@
+@media screen and (max-width: 765px) {
+  .center-content .aboutme {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .center-content .firsttitle {
+    font-size: 17px;
+  }
+
+  .textpropos {
+    font-size: 15px;
+  }
+
+  .textpropos .paragraphe1 {
+    margin-bottom: 55px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .textpropos .paragraphe2 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .myskills {
+    margin-top: 100px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .myskills .scndtitle {
+    font-size: 17px;
+  }
+
+  .myskills .bar2 {
+    width: 70%;
+  }
+
+  .container-skills-icons .skills-icons {
+    width: 70%;
+  }
+
+  .container-skills-icons
+    .skills-icons
+    .inside-elements
+    .leftside-skills-icons
+    img {
+    width: 60px;
+  }
+  .container-skills-icons .skills-icons .rightside-skills-icons img {
+    width: 60px;
+  }
+
+  .container-skills-icons .skills-icons .splitbar {
+    height: 95%;
+  }
+}

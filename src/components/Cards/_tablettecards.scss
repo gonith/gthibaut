@@ -1,0 +1,32 @@
+@media screen and (max-width: 1200px) {
+  .container-card,
+  .container-card-reverse {
+    width: 80%;
+    margin: 0;
+  }
+
+  .title {
+    margin-bottom: 0;
+
+    // h1 {
+    //   font-size: 23px;
+    //   margin-left: 10%;
+    // }
+  }
+
+  .rightside .formation-title h2,
+  .formation-title-reverse h2 {
+    font-size: 22px;
+  }
+
+  .rightside .formation-title h3,
+  .formation-title-reverse h3 {
+    font-size: 15px;
+  }
+
+  .rightside .description,
+  .description-reverse {
+    padding: 20px 15px;
+    font-size: 14px;
+  }
+}

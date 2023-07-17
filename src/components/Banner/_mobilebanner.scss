@@ -1,0 +1,38 @@
+@media screen and (max-width: 765px) {
+  .circuit-bas {
+    width: 35%;
+  }
+  .title-head {
+    width: 30%;
+  }
+  .colonne-droite {
+    width: 35%;
+    margin-top: 0;
+  }
+
+  .circuit-droite {
+    background-position: top 50px right 0px;
+  }
+
+  .circuit-bas {
+    height: 100.2%;
+  }
+  .title-head img {
+    width: 220px;
+    margin-bottom: 35px;
+  }
+  .title-head .text h2 {
+    font-size: 28px;
+  }
+  .title-head .text h1 {
+    font-size: 12px;
+  }
+  .colonne-droite .container-btn .cv-btn {
+    height: 40px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .colonne-droite .container-btn {
+    margin-top: 0px;
+  }
+}

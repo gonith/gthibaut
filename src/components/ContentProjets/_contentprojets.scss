@@ -1,0 +1,75 @@
+main {
+  display: box;
+}
+
+.fond-projets {
+  width: auto;
+  height: auto;
+  background-color: #282828;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.title {
+  width: 100%;
+  // border: 2px solid blue;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  h1 {
+    color: white;
+    font-weight: 500;
+    margin-left: 15%;
+    margin-right: 30px;
+    animation: 1s ease fadefromleft;
+  }
+
+  .bar {
+    background-color: #5effd8;
+    width: 30%;
+    height: 2px;
+    animation-name: circuitlight, barfadein;
+    animation-duration: 3s, 2s;
+    animation-delay: 2s, 0s;
+    animation-iteration-count: infinite, 1;
+  }
+}
+
+@keyframes circuitlight {
+  0% {
+    filter: drop-shadow(0 0 0px #5effd8);
+    // opacity: 0;
+  }
+  50% {
+    filter: drop-shadow(0 0 5px #5effd8);
+    // opacity: 1;
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #5effd8);
+    // opacity: 0;
+  }
+}
+
+@keyframes fadefromleft {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes barfadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@import "./mobileprojets.scss";

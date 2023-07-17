@@ -1,0 +1,329 @@
+.container-fond {
+  // width: 100svw;
+  // height: 100svh;
+  background-color: #282828;
+}
+
+.container-content {
+  // border: 2px solid red;
+  display: flex;
+  height: 100%;
+}
+
+.left-light-skills {
+  // border: 2px solid white;
+  width: 25%;
+  // height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .leftfade {
+    animation: 1s ease fadeinleft;
+  }
+
+  ul li {
+    color: #5effd8;
+    margin-bottom: 5px;
+    filter: blur(3px);
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+  }
+  .hovered {
+    filter: blur(0px);
+    transform: translateX(10%);
+    transition: 0.5s;
+  }
+
+  li[class$="-hovered"] {
+    /* Applique la classe "hovered" aux éléments <li> dont la classe se termine par "-hovered" */
+    @extend .hovered;
+  }
+}
+
+.center-content {
+  // border: 2px solid blue;
+  width: 50%;
+  // height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .centerpropos {
+    // border: 5px solid white;
+    animation: 1s ease fadeinbottom;
+  }
+
+  .aboutme {
+    // border: 2px solid white;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .firsttitle {
+    color: white;
+    font-weight: 500;
+    padding-right: 20px;
+    font-size: 21px;
+  }
+  .bar {
+    width: 83%;
+    background-color: #5effd8;
+    height: 2px;
+    animation: 3s ease-in-out infinite circuitlight;
+  }
+}
+
+@keyframes circuitlight {
+  0% {
+    filter: drop-shadow(0 0 0px #5effd8);
+    // opacity: 0;
+  }
+  50% {
+    filter: drop-shadow(0 0 5px #5effd8);
+    // opacity: 1;
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #5effd8);
+    // opacity: 0;
+  }
+}
+
+.textpropos {
+  // border: 2px solid red;
+  height: 175px;
+  margin-top: 30px;
+  font-size: 18px;
+  color: white;
+  // letter-spacing: ;
+
+  span {
+    color: #5effd8;
+  }
+
+  .paragraphe1 {
+    margin-bottom: 30px;
+  }
+}
+
+.myskills {
+  // border: 2px solid white;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  .scndtitle {
+    color: white;
+    font-weight: 500;
+    padding-left: 21px;
+    font-size: 21px;
+  }
+  .bar2 {
+    width: 85%;
+    background-color: #5effd8;
+    height: 2px;
+    animation: 3s ease-in-out infinite circuitlight;
+  }
+}
+
+.right-light-about {
+  // border: 2px solid white;
+  width: 25%;
+  // height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .rightfade {
+    animation: 1s ease fadeinright;
+  }
+
+  ul li {
+    margin-bottom: 5px;
+    color: #5effd8;
+    filter: blur(3px);
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+  }
+
+  li {
+    animation: 6s ease-in-out infinite blurtonotblur;
+  }
+
+  li.read {
+    animation-delay: 0s;
+  }
+
+  li.sport {
+    animation-delay: 1s;
+  }
+
+  li.meditation {
+    animation-delay: 2s;
+  }
+
+  li.think {
+    animation-delay: 3s;
+  }
+
+  li.design {
+    animation-delay: 4s;
+  }
+
+  li.develop {
+    animation-delay: 5s;
+  }
+}
+
+@keyframes blurtonotblur {
+  0% {
+    filter: blur(2.5px);
+  }
+  16% {
+    transform: translateX(10%);
+    filter: blur(0px);
+  }
+  32% {
+    transform: translateX(0%);
+    filter: blur(2.5px);
+  }
+  100% {
+    filter: blur(2.5px);
+  }
+}
+
+.container-skills-icons {
+  // border: 2px solid red;
+  width: 100%;
+  height: 250px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+
+  .skills-icons {
+    // border: 2px solid blue;
+    width: 60%;
+    height: 100%;
+
+    .inprocess {
+      // border: 2px solid white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      p {
+        margin-left: 110px;
+        font-weight: 500;
+        color: #5effd8;
+        animation: 3s ease-in-out infinite circuitlight;
+      }
+    }
+
+    .inside-elements {
+      // border: 2px solid black;
+      width: 100%;
+      height: 91%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .leftside-skills-icons {
+        // border: 2px solid green;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        img {
+          padding: 5px;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+        img.htmlogo:hover,
+        img.jslogo:hover {
+          transform: translateY(-10%);
+        }
+
+        img.reactlogo:hover,
+        img.sasslogo:hover {
+          transform: translateY(10%);
+        }
+      }
+    }
+
+    .splitbar {
+      // border: 2px solid yellow;
+      width: 3px;
+      height: 105%;
+      position: relative;
+      top: -5px;
+      background-color: #5effd8;
+      animation: 3s ease-in-out infinite circuitlight;
+    }
+
+    .rightside-skills-icons {
+      // border: 2px solid green;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      img {
+        padding: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      img.tslogo:hover,
+      img.figmalogo:hover {
+        transform: translateY(-10%);
+      }
+      img.vitejslogo:hover {
+        transform: translateY(10%);
+      }
+    }
+  }
+}
+
+@keyframes fadeinbottom {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinleft {
+  0% {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinright {
+  0% {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@import "./tablettepropos.scss";
+@import "./mobilepropos.scss";

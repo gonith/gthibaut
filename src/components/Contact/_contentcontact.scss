@@ -1,0 +1,256 @@
+main {
+  background-color: #282828;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.container-form {
+  width: 100%;
+  height: 100%;
+  // border: 2px solid blue;
+  // margin-top: 30px;
+  display: flex;
+  justify-content: center;
+
+  .container-reseaux {
+    // border: 2px solid red;
+    width: 25%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .container-logos-bar {
+      // border: 2px solid white;
+      height: 375px;
+      width: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: 1s ease fadefromleft;
+
+      .logos {
+        width: 100%;
+        // border: 2px solid red;
+        height: 185px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        a img {
+          transition: 0.5s;
+        }
+
+        a:hover {
+          img {
+            transform: translateX(10px);
+            filter: drop-shadow(0px 0px 5px #5effd8);
+          }
+        }
+      }
+      .bardeco {
+        width: 2px;
+        background-color: #5effd8;
+        height: 200px;
+        animation: 3s infinite ease lightbar;
+      }
+    }
+  }
+
+  .container-center {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      display: none;
+    }
+  }
+
+  @keyframes lightbar {
+    0% {
+      filter: drop-shadow(0px 0px 0px);
+    }
+    50% {
+      filter: drop-shadow(0px 0px 5px #5effd8);
+    }
+    100% {
+      filter: drop-shadow(0px 0px 0px);
+    }
+  }
+
+  .container-decor {
+    // border: 2px solid red;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .mails-open {
+      padding: 10px;
+      background-color: #5effd8;
+      width: 150px;
+      position: relative;
+      right: 75px;
+      top: 40px;
+      font-weight: 600;
+      animation: 1s ease fadefromright;
+    }
+
+    .quotes {
+      // border: 2px solid white;
+      height: 400px;
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+
+      ul {
+        // border: 2px solid green;
+        width: 80%;
+        animation: 1s ease fadefromright;
+
+        li {
+          color: #5effd8;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          font-weight: 600;
+          opacity: 0.1;
+          animation: 6s ease infinite opacitytext;
+        }
+
+        .think {
+          margin-top: 80px;
+          font-size: 24px;
+        }
+        .design {
+          font-size: 24px;
+          animation-delay: 1s;
+        }
+        .develop {
+          font-size: 24px;
+          animation-delay: 2s;
+        }
+        .together {
+          margin-top: 30px;
+          font-size: 35px;
+          animation-delay: 4s;
+        }
+
+        @keyframes opacitytext {
+          0% {
+            opacity: 0.1;
+          }
+          25% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0.1;
+          }
+        }
+      }
+    }
+  }
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // border: 2px solid white;
+  background-color: #414244;
+  height: 80%;
+  gap: 70px;
+  animation: 1s ease fadefrombottom;
+
+  .formname {
+    width: min(12rem, 250px);
+    height: 30px;
+    background-color: #282828;
+    margin-left: 3rem;
+    color: white;
+  }
+
+  .formemail {
+    width: min(12rem, 250px);
+    height: 30px;
+    background-color: #282828;
+    margin-left: 3rem;
+    color: white;
+  }
+
+  .formtext {
+    height: 100px;
+    background-color: #282828;
+    color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .container-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btnsubmit {
+    padding: 10px;
+    width: 10rem;
+    cursor: pointer;
+    background-color: #282828;
+    color: white;
+    transition: 0.3s;
+    border: none;
+  }
+
+  .btnsubmit:hover {
+    filter: drop-shadow(0px 0px 5px #5effd8);
+    background-color: #5effd8;
+    color: #282828;
+  }
+
+  p {
+    color: white;
+    font-weight: 500;
+  }
+}
+
+@keyframes fadefromleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadefrombottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadefromright {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@import "./tablette";
+@import "./mobilecontact.scss";

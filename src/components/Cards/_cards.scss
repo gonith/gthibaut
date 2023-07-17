@@ -1,0 +1,215 @@
+// Projet Kasa
+
+.container-projets {
+  // border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container-card {
+  // border: 2px solid red;
+  width: 70%;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  opacity: 0;
+}
+
+.leftside {
+  width: 50%;
+  height: 400px;
+  // border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .kasa img {
+    width: min(100%, 600px);
+    z-index: 1;
+    // border: 3px solid transparent;
+    transition: 0.5s;
+  }
+
+  a img:hover {
+    // border: 3px solid #5effd8;
+    box-shadow: #5effd8 1px 0 10px;
+  }
+}
+
+.rightside {
+  width: 50%;
+  height: 400px;
+  // border: 2px solid blue;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  .formation-title {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    h3 {
+      color: #5effd8;
+      font-size: 17px;
+    }
+
+    h2 {
+      color: white;
+      font-size: 25px;
+    }
+  }
+
+  .description {
+    padding: 25px 20px;
+    background-color: #414244;
+    width: 130%;
+    color: white;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+
+.languages ul {
+  display: flex;
+
+  li {
+    margin-left: 13px;
+    color: #5effd8;
+    font-size: 13px;
+  }
+}
+
+// Projet Starbucks
+
+.container-card-reverse {
+  // border: 2px solid red;
+  width: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.starbucks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.starbucks img {
+  width: min(100%, 600px);
+  // border: 3px solid transparent;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.rightside-reverse {
+  width: 50%;
+  height: 400px;
+  // border: 2px solid blue;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description-reverse {
+  padding: 25px 20px;
+  background-color: #414244;
+  width: 130%;
+  color: white;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.formation-title-reverse {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    color: #5effd8;
+    font-size: 17px;
+  }
+
+  h2 {
+    color: white;
+    font-size: 25px;
+  }
+}
+
+// Ohmyfood
+
+.ohmyfood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-image: url(../../images/Ohmyfoodmini.png);
+  // object-fit: contain;
+  // background-repeat: no-repeat;
+  // width: 100%;
+}
+.ohmyfood img {
+  // border: 3px solid transparent;
+  transition: 0.5s;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+// Booki
+
+.booki {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.booki img {
+  // border: 3px solid transparent;
+  transition: 0.5s;
+  width: min(100%, 600px);
+}
+
+.animation {
+  animation: 1s ease forwards fadeinanim;
+}
+
+@keyframes fadeinanim {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+// Panthère
+
+.panthère {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panthère img {
+  // border: 3px solid transparent;
+  transition: 0.5s;
+  width: min(100%, 600px);
+}
+
+@import "./tablettecards.scss";

@@ -1,0 +1,55 @@
+@media screen and (max-width: 1200px) {
+  .container-form .container-decor {
+    display: none;
+  }
+
+  .container-form {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .container-center {
+      width: 80%;
+      flex-direction: column;
+
+      p {
+        display: flex;
+        padding: 50px;
+        color: #282828;
+        background-color: #5effd8;
+        font-weight: 500;
+        margin-bottom: 30px;
+        animation: 1s ease fadefrombottom;
+      }
+    }
+  }
+
+  form {
+    height: 100%;
+    padding: 50px;
+  }
+
+  .container-form .container-reseaux {
+    height: auto;
+
+    .container-logos-bar {
+      justify-content: center;
+      flex-direction: row;
+      height: 300px;
+
+      .logos {
+        flex-direction: row;
+        gap: 50px;
+      }
+    }
+  }
+
+  a:hover {
+    img {
+      transform: translateX(0px);
+    }
+  }
+
+  .bardeco {
+    display: none;
+  }
+}
